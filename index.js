@@ -65,3 +65,23 @@ const accord = function(){
     });
 }
 accord();
+
+let openNavBtn = document.querySelector('.nav .open-nav');
+openNavBtn.addEventListener('click', function(){
+    let burger = document.querySelector('.burger');
+    burger.classList.add('display-flex');
+});
+
+let burgerBg = document.querySelector('.burger-bg');
+burgerBg.addEventListener('click', function() {
+    let burger = document.querySelector('.burger');
+    burger.classList.remove('display-flex');
+});
+
+let burgerLinks = document.querySelectorAll('.burger-nav a');
+burgerLinks.forEach(function(elem){
+    elem.addEventListener('click', function() {
+        let burger = document.querySelector('.burger');
+        burger.classList.remove('display-flex');
+    });
+});
