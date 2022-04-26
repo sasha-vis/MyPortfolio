@@ -85,5 +85,6 @@ burgerLinks.forEach(function(elem){
     elem.addEventListener('click', function() {
         let burger = document.querySelector('.burger');
         burger.classList.remove('display-flex');
+        openNavBtn.classList.remove('opened-nav');
     });
 });
