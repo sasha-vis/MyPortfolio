@@ -813,3 +813,14 @@ ul {
     border-radius: 2px;
 }
 
+.opened-nav {
+    flex-direction: row !important;
+    border-color: #E7746F;
+}
+
+.opened-nav > div {
+    height: 55% !important;
+    width: 3px !important;
+    background-color: #E7746F;
+}
+

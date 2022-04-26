@@ -68,6 +68,7 @@ accord();
 
 let openNavBtn = document.querySelector('.nav .open-nav');
 openNavBtn.addEventListener('click', function(){
+    openNavBtn.classList.add('opened-nav');
     let burger = document.querySelector('.burger');
     burger.classList.add('display-flex');
 });
@@ -76,6 +77,7 @@ let burgerBg = document.querySelector('.burger-bg');
 burgerBg.addEventListener('click', function() {
     let burger = document.querySelector('.burger');
     burger.classList.remove('display-flex');
+    openNavBtn.classList.remove('opened-nav');
 });
 
 let burgerLinks = document.querySelectorAll('.burger-nav a');
